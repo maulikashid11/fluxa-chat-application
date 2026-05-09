@@ -16,7 +16,7 @@ function App() {
   const navigate = useNavigate();
   useEffect(() => {
     const fetchUser = async () => {
-      const res = await fetch("http://localhost:3000/api/users/getuser", {
+      const res = await fetch("https://fluxa-chat-application.vercel.app/api/users/getuser", {
         headers:{
           "Content-Type":"application/json"
         },

@@ -18,7 +18,7 @@ const Messages = () => {
     const handleSendMessage = async (e) => {
         e.preventDefault();
         if (message.length > 0) {
-            const res = await fetch('http://localhost:3000/api/message/sendmessage', {
+            const res = await fetch('https://fluxa-chat-application.vercel.app/api/message/sendmessage', {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
