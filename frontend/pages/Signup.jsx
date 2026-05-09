@@ -21,7 +21,6 @@ export default function Signup() {
       setDetails({ ...details, [e.target.name]: e.target.value })
     }
   }
-  console.log(details)
 
   const handleSubmit = async (e) => {
 
