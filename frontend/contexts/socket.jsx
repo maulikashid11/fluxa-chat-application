@@ -11,7 +11,7 @@ export const SocketProvider = ({ children }) => {
     useEffect(() => {
         if (!user?._id) return;
 
-        const newSocket = io("http://localhost:3000", {
+        const newSocket = io("https://fluxa-chat-application.vercel.app", {
             query: { user: user._id }
         });
 

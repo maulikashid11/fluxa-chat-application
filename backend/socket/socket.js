@@ -3,8 +3,6 @@ import http from 'http';
 import { Server } from 'socket.io';
 import User from '../models/userModel.js';
 
-
-
 const app = express();
 
 const server = http.createServer(app);
@@ -30,10 +28,9 @@ io.on('connection', (socket) => {
     socket.on('disconnect', () => {
         console.log("Disconnected user", socket.id);
         delete onlineUsers[userId];
-        io.emit('getusers',Object.keys(onlineUsers));
-        
+        io.emit('getusers',Object.keys(onlineUsers)); 
     })
 })
 
-export { app, io, server }
+export { app, io, server };
 
