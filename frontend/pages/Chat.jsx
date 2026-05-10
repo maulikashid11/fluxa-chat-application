@@ -27,7 +27,7 @@ const Chat = () => {
 
 
   const handleLogout = async () => {
-    const res = await fetch("https://fluxa-chat-application.vercel.app/api/users/logout", {
+    const res = await fetch("https://fluxa-chat-application.onrender.com/api/users/logout", {
       credentials: "include"
     })
     const data = await res.json();
@@ -39,7 +39,7 @@ const Chat = () => {
 
   useEffect(() => {
     const fetchUsers = async () => {
-      const res = await fetch("https://fluxa-chat-application.vercel.app/api/users/getotherusers", {
+      const res = await fetch("https://fluxa-chat-application.onrender.com/api/users/getotherusers", {
         credentials: "include",
       });
       const data = await res.json();

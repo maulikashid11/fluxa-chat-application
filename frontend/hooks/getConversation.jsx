@@ -9,7 +9,7 @@ const GetConversation = () => {
 
     useEffect(() => {
         const fetchConversation = async () => {
-            const res = await fetch('https://fluxa-chat-application.vercel.app/api/message/getconversation', {
+            const res = await fetch('https://fluxa-chat-application.onrender.com/api/message/getconversation', {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

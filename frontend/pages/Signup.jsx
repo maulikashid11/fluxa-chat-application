@@ -36,7 +36,7 @@ export default function Signup() {
 
     try {
 
-      const res = await fetch("https://fluxa-chat-application.vercel.app/api/users/register", {
+      const res = await fetch("https://fluxa-chat-application.onrender.com/api/users/register", {
         method: "POST",
         credentials: "include",
         body: formData
